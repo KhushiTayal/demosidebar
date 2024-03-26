@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 const App = () => {
   const [open, setOpen] = useState(true);
   const Menus = [
@@ -21,7 +22,7 @@ const App = () => {
         } bg-blue-500 h-screen p-5  pt-8 relative duration-300`}
       >
         <img
-          src="./src/assets/control.png"
+          src="/assets/control.png"
           className={`absolute cursor-pointer -right-3 top-9 w-7 border-dark-purple
            border-2 rounded-full  ${!open && "rotate-180"}`}
           onClick={() => setOpen(!open)}
@@ -37,7 +38,7 @@ const App = () => {
                 index === 0 && "bg-light-white"
               } `}
             >
-              <img src={`./src/assets/${Menu.src}.png`} alt={Menu.title} />
+              <img src={`/assets/${Menu.src}.png`} alt={Menu.title} />
               <span className={`${!open && "hidden"} origin-left duration-200 font-bold`}>
                 {Menu.title}
               </span>
